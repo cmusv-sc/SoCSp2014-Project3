@@ -1,0 +1,51 @@
+<project name="SearchEngine" basedir="." default="main">
+  <property name="lib.dir"     value="lib"/>
+  <property name="classes.dir"     value="build/classes"/>
+  <property name="jars.dir"     value="build/jar"/>
+  
+  <path id="build.classpath">
+    <fileset dir="${basedir}">
+      <include name="lib/*.jar"/>
+    </fileset>
+  </path>
+
+  <pathconvert property="manifest.classpath" pathsep=" ">
+    <path refid="build.classpath"/>
+    <mapper>
+      <chainedmapper>
+        <flattenmapper/>
+        <globmapper from="*.jar" to="../../lib/*.jar"/>
+      </chainedmapper>
+    </mapper>
+  </pathconvert>
+  
+  <target name="clean">
+    <delete dir="build"/>
+  </target>
+
+  <target name="compile">
+    <mkdir dir="${classes.dir}"/>
+    <javac srcdir="src" destdir="${classes.dir}" classpathref="build.classpath" includeantruntime="false"/>
+  </target>
+
+  <target name="jar">
+    <echo message="Manifest Classpath ${manifest.classpath}"/>
+    <mkdir dir="${jars.dir}"/>
+    <jar destfile="${jars.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+      <fileset dir="${basedir}" />
+      <manifest>
+        <attribute name="Main-Class" value="${ant.project.name}"/>
+        <attribute name="Class-Path" value="${manifest.classpath}"/>
+      </manifest>
+    </jar>
+  </target>
+
+  <target name="run">
+    <java jar="${jars.dir}/${ant.project.name}.jar" fork="true">
+      <classpath>
+        <path refid="build.classpath"/>
+      </classpath>
+    </java>
+  </target>
+
+</project>
