@@ -11,7 +11,6 @@ import com.mongodb.DBCursor;
 import com.mongodb.ServerAddress;
 
 import java.io.*;
-import java.util.*;
 
 //It begins
 import org.apache.axiom.om.OMElement;
@@ -39,6 +38,8 @@ public class SearchEngine {
         String USER = "admin";
         String PASSWORD = "admin";
         RemoteRegistry registry = new RemoteRegistry(REGISTRY_URL, USER, PASSWORD);
+        Collection collection = registry.newCollection();
+        registry.put("/c1/c2", collection);
 //        if (args.length != 2) {
 //            System.out.printf("\n\nUsage:\nSearchEngine <key> <value>\n");
 //        }
