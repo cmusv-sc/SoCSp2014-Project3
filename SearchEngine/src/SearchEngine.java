@@ -11,6 +11,7 @@ import com.mongodb.DBCursor;
 import com.mongodb.ServerAddress;
 
 import java.io.*;
+import java.util.Scanner;
 
 //It begins
 import org.apache.axiom.om.OMElement;
@@ -43,6 +44,21 @@ public class SearchEngine {
         RemoteRegistry registry = new RemoteRegistry(REGISTRY_URL, USER, PASSWORD);
         Collection collection = registry.newCollection();
         registry.put("/c1/c2", collection);
+        
+        Resource r1 = registry.newResource();
+        String str = "My File Content";
+        r1.setContent(str.getBytes());
+        registry.put("/c1/c2/r1", r1);
+
+        Comment c1 = new Comment();
+        c1.setText("This is my comment");
+        registry.addComment("/c1/c2/r1", c1);
+        System.out.println(registry.getComments("/c1/c2/r1")[0].getText());
+
+//        registry.searchContent("Content");
+//        String line;
+//        Scanner stdin = new Scanner(System.in);
+        
 //        if (args.length != 2) {
 //            System.out.printf("\n\nUsage:\nSearchEngine <key> <value>\n");
 //        }
