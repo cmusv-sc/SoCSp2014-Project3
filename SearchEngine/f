@@ -1,0 +1,989 @@
+Buildfile: /home/chris/SoCSp2014-Project3/SearchEngine/build.xml
+
+clean:
+   [delete] Deleting directory /home/chris/SoCSp2014-Project3/SearchEngine/build
+
+compile:
+    [mkdir] Created dir: /home/chris/SoCSp2014-Project3/SearchEngine/build/classes
+    [javac] Compiling 1 source file to /home/chris/SoCSp2014-Project3/SearchEngine/build/classes
+
+jar:
+     [echo] Manifest Classpath ../../lib/XmlSchema_1.4.7-wso2v2.jar ../../lib/abdera_1.0.0-wso2v3.jar ../../lib/axiom-e4x_2.0.1-wso2v1.jar ../../lib/axiom_1.2.11-wso2v3.jar ../../lib/axis2-json_1.6.1-wso2v7.jar ../../lib/axis2-transport-jms_1.1.0-wso2v7.jar ../../lib/axis2_1.6.1-wso2v7.jar ../../lib/backport-util-concurrent_3.1.0-wso2v1.jar ../../lib/commons-codec_1.4.0-wso2v1.jar ../../lib/commons-dbcp_1.4.0-wso2v1.jar ../../lib/commons-fileupload_1.2.2-wso2v1.jar ../../lib/commons-httpclient_3.1.0-wso2v2.jar ../../lib/commons-io_2.0.0-wso2v2.jar ../../lib/commons-lang-2.6.0-wso2v1.jar ../../lib/commons-pool_1.5.6-wso2v1.jar ../../lib/compass_2.0.1-wso2v2.jar ../../lib/ehcache_1.5.0-wso2v3.jar ../../lib/geronimo-connector_2.0.1-wso2v1.jar ../../lib/geronimo-j2ee-connector_1.5_spec_1.0.0-wso2v1.jar ../../lib/geronimo-saaj_1.3_spec_1.0.0-wso2v3.jar ../../lib/geronimo-transaction_2.0.1-wso2v1.jar ../../lib/httpcore_4.1.0-wso2v1.jar ../../lib/jdbc-pool_7.0.28-wso2v1.jar ../../lib/jettison_1.1.0-wso2v1.jar ../../lib/jsr107cache_1.1.0-wso2v3.jar ../../lib/mongo-java-driver-2.11.4.jar ../../lib/neethi_2.0.4-wso2v4.jar ../../lib/opensaml2_2.4.1-wso2v1.jar ../../lib/org.wso2.carbon.addressing_4.0.0.jar ../../lib/org.wso2.carbon.authenticator.proxy_4.0.2.jar ../../lib/org.wso2.carbon.authenticator.stub_4.0.0.jar ../../lib/org.wso2.carbon.base_4.0.0.jar ../../lib/org.wso2.carbon.caching.core_4.0.2.jar ../../lib/org.wso2.carbon.core.bootup.validator_4.0.0.jar ../../lib/org.wso2.carbon.core.common_4.0.0.jar ../../lib/org.wso2.carbon.core.commons.stub_4.0.0.jar ../../lib/org.wso2.carbon.core.services_4.0.5.jar ../../lib/org.wso2.carbon.core_4.0.5.jar ../../lib/org.wso2.carbon.discovery.core_4.0.2.jar ../../lib/org.wso2.carbon.governance.api_4.0.5.jar ../../lib/org.wso2.carbon.logging.admin.stub_4.0.0.jar ../../lib/org.wso2.carbon.logging.admin.ui_4.0.0.jar ../../lib/org.wso2.carbon.logging.service_4.0.5.jar ../../lib/org.wso2.carbon.logging.view.stub_4.0.3.jar ../../lib/org.wso2.carbon.logging.view.ui_4.0.5.jar ../../lib/org.wso2.carbon.logging_4.0.0.jar ../../lib/org.wso2.carbon.ndatasource.common_4.0.0.jar ../../lib/org.wso2.carbon.ndatasource.core_4.0.5.jar ../../lib/org.wso2.carbon.ndatasource.rdbms_4.0.0.jar ../../lib/org.wso2.carbon.registry.admin.api_4.0.5.jar ../../lib/org.wso2.carbon.registry.api_4.0.0.jar ../../lib/org.wso2.carbon.registry.core_4.0.5.jar ../../lib/org.wso2.carbon.registry.extensions.stub_4.0.0.jar ../../lib/org.wso2.carbon.registry.extensions.ui_4.0.0.jar ../../lib/org.wso2.carbon.registry.extensions_4.0.5.jar ../../lib/org.wso2.carbon.registry.jcr_4.0.4.jar ../../lib/org.wso2.carbon.registry.ws.api_4.0.4.jar ../../lib/org.wso2.carbon.registry.ws.client_4.0.2.jar ../../lib/org.wso2.carbon.registry.ws.stub_4.0.0.jar ../../lib/org.wso2.carbon.rm_4.0.0.jar ../../lib/org.wso2.carbon.security.mgt.stub_4.0.0.jar ../../lib/org.wso2.carbon.security.mgt.ui_4.0.1.jar ../../lib/org.wso2.carbon.security.mgt_4.0.5.jar ../../lib/org.wso2.carbon.user.api_4.0.3.jar ../../lib/org.wso2.carbon.user.core_4.0.5.jar ../../lib/org.wso2.carbon.utils_4.0.5.jar ../../lib/org.wso2.securevault_1.0.0-wso2v2.jar ../../lib/rampart-core_1.6.1-wso2v8.jar ../../lib/rampart-policy_1.6.1-wso2v8.jar ../../lib/rampart-trust_1.6.1-wso2v8.jar ../../lib/spring.framework_3.1.0-wso2v1.jar ../../lib/woden_1.0.0.M8-wso2v1.jar ../../lib/wsdl4j_1.6.2-wso2v4.jar ../../lib/wss4j_1.5.11-wso2v5.jar ../../lib/xkms_2.4.0-wso2v1.jar ../../lib/xmlbeans_2.3.0-wso2v1.jar
+    [mkdir] Created dir: /home/chris/SoCSp2014-Project3/SearchEngine/build/jar
+      [jar] Building jar: /home/chris/SoCSp2014-Project3/SearchEngine/build/jar/SearchEngine.jar
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+This is my comment
+RESULTS: /
+
+RESULTS: /_system
+
+RESULTS: /_system/local
+
+RESULTS: /_system/config
+
+RESULTS: /_system/governance
+
+RESULTS: /_system/local/repository
+
+RESULTS: /_system/governance/repository
+
+RESULTS: /_system/config/repository
+
+RESULTS: /_system/local/repository/components
+
+RESULTS: /_system/local/repository/components/org.wso2.carbon.registry
+
+RESULTS: /_system/local/repository/components/org.wso2.carbon.registry/mount
+
+RESULTS: /_system/config/repository/components
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/media-types
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/media-types/index
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/media-types/index/custom.ui
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/media-types/index/collection
+
+RESULTS: /_system/config/users
+
+RESULTS: /_system/governance/trunk
+
+RESULTS: /_system/governance/trunk/services
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/configuration
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/configuration/services
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/configuration/services/service
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/configuration/services/service-schema
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.datasource
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/lifecycles
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/lifecycles/ServiceLifeCycle
+
+RESULTS: /_system/config/repository/reports
+
+RESULTS: /_system/config/repository/reports/org.wso2.carbon.reporting
+
+RESULTS: /_system/config/repository/reports/org.wso2.carbon.reporting/jrxml
+
+RESULTS: /_system/config/repository/reports/org.wso2.carbon.reporting/jrxml/MetaDataReportTemplate.jrxml
+
+RESULTS: /_system/config/repository/reports/org.wso2.carbon.reporting/jrxml/Activity Search Report.jrxml
+
+RESULTS: /_system/config/repository/reports/org.wso2.carbon.reporting/jrxml/ContentReportTemplate.jrxml
+
+RESULTS: /_system/governance/trunk/policies
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario1
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario2
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario3
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario4
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario5
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario6
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario7
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario8
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario9
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario10
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario11
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario12
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario13
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario14
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario15
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario20
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario31
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario32
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario33
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario34
+
+RESULTS: /_system/governance/repository/security
+
+RESULTS: /_system/governance/repository/security/key-stores
+
+RESULTS: /_system/governance/repository/security/key-stores/carbon-primary-ks
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.throttle
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.throttle/templates
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.throttle/templates/service
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.throttle/templates/global
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.throttle/templates/operation
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.throttle/templates/mediator
+
+RESULTS: /_system/governance/permission/admin/login
+
+RESULTS: /_system/governance/permission/admin/configure/security/usermgt/profiles
+
+RESULTS: /_system/governance/permission/admin/configure/security/usermgt/users
+
+RESULTS: /_system/governance/permission/admin/configure/security/usermgt/passwords
+
+RESULTS: /_system/governance/permission/admin
+
+RESULTS: /_system/governance/permission/admin/manage/modify
+
+RESULTS: /_system/governance/permission/admin/configure/security
+
+RESULTS: /_system/governance/permission
+
+RESULTS: /_system/governance/permission/protected
+
+RESULTS: /_system/governance/permission/admin/configure/security/usermgt
+
+RESULTS: /_system/governance/permission/admin/manage
+
+RESULTS: /_system/governance/permission/admin/configure
+
+RESULTS: /_system/governance/permission/admin/monitor
+
+RESULTS: /_system/governance/permission/admin/manage/add
+
+RESULTS: /_system/governance/permission/admin/manage/add/webapp
+
+RESULTS: /_system/governance/permission/admin/manage/modify/webapp
+
+RESULTS: /_system/governance/permission/admin/manage/api
+
+RESULTS: /_system/governance/permission/admin/manage/api/create
+
+RESULTS: /_system/governance/permission/admin/manage/api/publish
+
+RESULTS: /_system/governance/permission/admin/manage/api/subscribe
+
+RESULTS: /_system/governance/permission/admin/manage/manage_tiers
+
+RESULTS: /_system/governance/permission/admin/manage/attachment
+
+RESULTS: /_system/governance/permission/admin/monitor/attachment
+
+RESULTS: /_system/governance/permission/admin/configure/datasources
+
+RESULTS: /_system/governance/permission/admin/configure/discovery
+
+RESULTS: /_system/governance/permission/protected/configure
+
+RESULTS: /_system/governance/permission/protected/configure/components
+
+RESULTS: /_system/governance/permission/admin/manage/resources
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/lifecycles
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/generic
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/generic/add
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/generic/list
+
+RESULTS: /_system/governance/permission/admin/configure/governance
+
+RESULTS: /_system/governance/permission/admin/configure/governance/generic
+
+RESULTS: /_system/governance/permission/admin/configure/governance/manage-rxt
+
+RESULTS: /_system/governance/permission/admin/configure/governance/lifecycles
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/metadata
+
+RESULTS: /_system/governance/permission/admin/manage/humantask
+
+RESULTS: /_system/governance/permission/admin/manage/humantask/task
+
+RESULTS: /_system/governance/permission/admin/manage/humantask/packages
+
+RESULTS: /_system/governance/permission/admin/manage/humantask/viewtasks
+
+RESULTS: /_system/governance/permission/admin/manage/humantask/add
+
+RESULTS: /_system/governance/permission/admin/manage/modify/user-profile
+
+RESULTS: /_system/governance/permission/protected/configure/logging
+
+RESULTS: /_system/governance/permission/admin/monitor/logging
+
+RESULTS: /_system/governance/permission/admin/manage/modify/module
+
+RESULTS: /_system/governance/permission/admin/manage/add/module
+
+RESULTS: /_system/governance/permission/admin/manage/search
+
+RESULTS: /_system/governance/permission/admin/manage/search/activities
+
+RESULTS: /_system/governance/permission/admin/configure/repository
+
+RESULTS: /_system/governance/permission/admin/configure/repository/handlers
+
+RESULTS: /_system/governance/permission/admin/manage/resources/community-features
+
+RESULTS: /_system/governance/permission/admin/manage/resources/associations
+
+RESULTS: /_system/governance/permission/admin/manage/resources/browse
+
+RESULTS: /_system/governance/permission/admin/manage/resources/notifications
+
+RESULTS: /_system/governance/permission/admin/manage/extensions
+
+RESULTS: /_system/governance/permission/admin/manage/extensions/add
+
+RESULTS: /_system/governance/permission/admin/manage/extensions/list
+
+RESULTS: /_system/governance/permission/admin/manage/search/resources
+
+RESULTS: /_system/governance/permission/admin/manage/search/advanced-search
+
+RESULTS: /_system/governance/permission/admin/manage/uddipublish
+
+RESULTS: /_system/governance/permission/admin/manage/resources/ws-api
+
+RESULTS: /_system/governance/permission/protected/server-admin
+
+RESULTS: /_system/governance/permission/protected/server-admin/homepage
+
+RESULTS: /_system/governance/permission/admin/manage/add/service
+
+RESULTS: /_system/governance/permission/admin/manage/modify/service
+
+RESULTS: /_system/governance/permission/protected/manage
+
+RESULTS: /_system/governance/permission/protected/manage/monitor
+
+RESULTS: /_system/governance/permission/protected/manage/monitor/tenants
+
+RESULTS: /_system/governance/permission/protected/manage/modify
+
+RESULTS: /_system/governance/permission/protected/manage/modify/tenants
+
+RESULTS: /_system/governance/permission/admin/configure/theme
+
+RESULTS: /_system/governance/permission/admin/monitor/tenantUsage
+
+RESULTS: /_system/governance/permission/admin/monitor/tenantUsage/customUsage
+
+RESULTS: /_system/config/repository/transports
+
+RESULTS: /_system/config/repository/transports/https
+
+RESULTS: /_system/config/repository/transports/https/listener
+
+RESULTS: /_system/config/repository/transports/http
+
+RESULTS: /_system/config/repository/transports/http/listener
+
+RESULTS: /_system/config/repository/transports/local
+
+RESULTS: /_system/config/repository/transports/local/listener
+
+RESULTS: /_system/config/repository/transports/https/sender
+
+RESULTS: /_system/config/repository/transports/http/sender
+
+RESULTS: /_system/config/repository/transports/tcp
+
+RESULTS: /_system/config/repository/transports/tcp/sender
+
+RESULTS: /_system/config/repository/transports/local/sender
+
+RESULTS: /_system/config/repository/connection
+
+RESULTS: /_system/governance/repository/components
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.governance
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.governance/types
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.governance/types/wadl.rxt
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.governance/types/endpoint.rxt
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.governance/types/documentation.rxt
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.governance/types/service.rxt
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.governance/types/policy.rxt
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.governance/types/sequence.rxt
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.governance/types/api.rxt
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.governance/types/proxy.rxt
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.governance/types/provider.rxt
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.governance/types/uri.rxt
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.governance/types/wsdl.rxt
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.governance/types/schema.rxt
+
+RESULTS: /_system/governance/apimgt
+
+RESULTS: /_system/governance/apimgt/applicationdata
+
+RESULTS: /_system/governance/apimgt/applicationdata/tiers.xml
+
+RESULTS: /_system/governance/apimgt/customsequences
+
+RESULTS: /_system/governance/apimgt/customsequences/in
+
+RESULTS: /_system/governance/apimgt/customsequences/in/log_in_message.xml
+
+RESULTS: /_system/governance/apimgt/customsequences/out
+
+RESULTS: /_system/governance/apimgt/customsequences/out/log_out_message.xml
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.user.mgt
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.user.mgt/updatedTime
+
+RESULTS: /_system/governance/event
+
+RESULTS: /_system/governance/event/topics
+
+RESULTS: /_system/governance/event/topicIndex
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/api
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/api/add
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/api/list
+
+RESULTS: /_system/governance/permission/admin/configure/governance/api-ui
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/document
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/document/add
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/document/list
+
+RESULTS: /_system/governance/permission/admin/configure/governance/document-ui
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/endpoint
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/endpoint/add
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/endpoint/list
+
+RESULTS: /_system/governance/permission/admin/configure/governance/endpoint-ui
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/policy
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/policy/add
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/policy/list
+
+RESULTS: /_system/governance/permission/admin/configure/governance/policy-ui
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/provider
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/provider/add
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/provider/list
+
+RESULTS: /_system/governance/permission/admin/configure/governance/provider-ui
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/proxy
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/proxy/add
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/proxy/list
+
+RESULTS: /_system/governance/permission/admin/configure/governance/proxy-ui
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/schema
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/schema/add
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/schema/list
+
+RESULTS: /_system/governance/permission/admin/configure/governance/schema-ui
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/sequence
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/sequence/add
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/sequence/list
+
+RESULTS: /_system/governance/permission/admin/configure/governance/sequence-ui
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/service
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/service/add
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/service/list
+
+RESULTS: /_system/governance/permission/admin/configure/governance/service-ui
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/uri
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/uri/add
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/uri/list
+
+RESULTS: /_system/governance/permission/admin/configure/governance/uri-ui
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/wadl
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/wadl/add
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/wadl/list
+
+RESULTS: /_system/governance/permission/admin/configure/governance/wadl-ui
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/wsdl
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/wsdl/add
+
+RESULTS: /_system/governance/permission/admin/manage/resources/govern/wsdl/list
+
+RESULTS: /_system/governance/permission/admin/configure/governance/wsdl-ui
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.logging
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.logging/log4j.file.not.found
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.logging/wso2carbon.system.log.last.modified
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario19
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.security.mgt/policy/scenario18
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.registry
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.registry/queries
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.registry/queries/tag-summary
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.registry/queries/latest-apis
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.registry/queries/resource-by-tag
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/resource
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/resource/1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/resource/1.0.0/icon
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/resource
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/resource/1.0.0
+
+RESULTS: /_system/governance/trunk/endpoints
+
+RESULTS: /_system/governance/trunk/endpoints/_49
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10/_0
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10/_0/_10
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10/_0/_10/ep-resource
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/resource/1.0.0/api
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/resource-1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/resource-1.0.0/api-doc.json
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/resource/1.0.0/documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/resource/1.0.0/documentation/Wiki Documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/juddiv3
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/juddiv3/services
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/juddiv3/services/1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/juddiv3/services/1.0.0/icon
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/juddiv3
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/juddiv3/services
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/juddiv3/services/1.0.0
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10/_0/_10/juddiv3
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10/_0/_10/juddiv3/ep-services
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/juddiv3/services/1.0.0/api
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/juddiv3
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/juddiv3/services-1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/juddiv3/services-1.0.0/api-doc.json
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/juddiv3/services/1.0.0/documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/juddiv3/services/1.0.0/documentation/Wiki Documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/DiscoveryAdmin
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/DiscoveryAdmin/1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/DiscoveryAdmin/1.0.0/icon
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/DiscoveryAdmin
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/DiscoveryAdmin/1.0.0
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10/_0/_10/ep-DiscoveryAdmin
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/DiscoveryAdmin/1.0.0/api
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/DiscoveryAdmin-1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/DiscoveryAdmin-1.0.0/api-doc.json
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/DiscoveryAdmin/1.0.0/documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/DiscoveryAdmin/1.0.0/documentation/Wiki Documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/API
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/API/1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/API/1.0.0/icon
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/API
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/API/1.0.0
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10/_0/_10/ep-API
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/API/1.0.0/api
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/API-1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/API-1.0.0/api-doc.json
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/API/1.0.0/documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/API/1.0.0/documentation/Wiki Documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/URI
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/URI/1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/URI/1.0.0/icon
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/URI
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/URI/1.0.0
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10/_0/_10/ep-URI
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/URI/1.0.0/api
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/URI-1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/URI-1.0.0/api-doc.json
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/URI/1.0.0/documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/URI/1.0.0/documentation/Wiki Documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Schema
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Schema/1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Schema/1.0.0/icon
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Schema
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Schema/1.0.0
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10/_0/_10/ep-Schema
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Schema/1.0.0/api
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/Schema-1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/Schema-1.0.0/api-doc.json
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Schema/1.0.0/documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Schema/1.0.0/documentation/Wiki Documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/WSDL
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/WSDL/1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/WSDL/1.0.0/icon
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/WSDL
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/WSDL/1.0.0
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10/_0/_10/ep-WSDL
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/WSDL/1.0.0/api
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/WSDL-1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/WSDL-1.0.0/api-doc.json
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/WSDL/1.0.0/documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/WSDL/1.0.0/documentation/Wiki Documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/WADL
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/WADL/1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/WADL/1.0.0/icon
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/WADL
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/WADL/1.0.0
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10/_0/_10/ep-WADL
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/WADL/1.0.0/api
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/WADL-1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/WADL-1.0.0/api-doc.json
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/WADL/1.0.0/documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/WADL/1.0.0/documentation/Wiki Documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Endpoint
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Endpoint/1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Endpoint/1.0.0/icon
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Endpoint
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Endpoint/1.0.0
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10/_0/_10/ep-Endpoint
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Endpoint/1.0.0/api
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/Endpoint-1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/Endpoint-1.0.0/api-doc.json
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Proxy
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Proxy/1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Proxy/1.0.0/icon
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Proxy
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Proxy/1.0.0
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10/_0/_10/ep-Proxy
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Proxy/1.0.0/api
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/Proxy-1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/Proxy-1.0.0/api-doc.json
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Policy
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Policy/1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Policy/1.0.0/icon
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Policy
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Policy/1.0.0
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10/_0/_10/ep-Policy
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Policy/1.0.0/api
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/Policy-1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/Policy-1.0.0/api-doc.json
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Policy/1.0.0/documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Policy/1.0.0/documentation/Wiki Documentation
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Provider
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Provider/1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Provider/1.0.0/icon
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Provider
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Provider/1.0.0
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10/_0/_10/ep-Provider
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Provider/1.0.0/api
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/Provider-1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/Provider-1.0.0/api-doc.json
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Document
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Document/1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Document/1.0.0/icon
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Document
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Document/1.0.0
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10/_0/_10/ep-Document
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Document/1.0.0/api
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/Document-1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/Document-1.0.0/api-doc.json
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Sequence
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Sequence/1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/icons/admin/Sequence/1.0.0/icon
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Sequence
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Sequence/1.0.0
+
+RESULTS: /_system/governance/trunk/endpoints/_49/_10/_0/_10/ep-Sequence
+
+RESULTS: /_system/governance/apimgt/applicationdata/provider/admin/Sequence/1.0.0/api
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/Sequence-1.0.0
+
+RESULTS: /_system/governance/apimgt/applicationdata/api-docs/Sequence-1.0.0/api-doc.json
+
+RESULTS: /atom
+
+RESULTS: /atom/c1
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/handlers
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/configuration/api
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/configuration/document
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/configuration/endpoint
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/configuration/policy
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/configuration/provider
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/configuration/proxy
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/configuration/schema
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/configuration/sequence
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/configuration/service
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/configuration/uri
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/configuration/wadl
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.governance/configuration/wsdl
+
+RESULTS: /atom/c1/c2
+
+RESULTS: /atom/c1/c2/r1
+
+RESULTS: /_system/local/repository/components/org.wso2.carbon.registry/indexing
+
+RESULTS: /_system/local/repository/components/org.wso2.carbon.registry/indexing/lastaccesstime
+
+RESULTS: /_system/config/repository/connection/props
+
+RESULTS: /_system/config/repository/components/org.wso2.carbon.logging/wso2carbon.system.log.pattern
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/admin
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/admin/main.css
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_logging.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/test.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/error.png
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/header.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/delete.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_stats.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_list_ds.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/magnifier.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/gov-button-bg-hover.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/trace.png
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/expand.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/plugin_add.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/powered.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/collapse.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_home.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_user_groups.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/help.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_users.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_restart.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/edit.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_keystore.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_global_config.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/debug.png
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/button_center_over.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_add_ds.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/information.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/button-bg.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/submit-button-bg.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/fatal.png
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/gov-header-region-bg.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/t-right-logo.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/gov-header-bg.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/gov-home-bg.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_monitor.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/warn.png
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/default-menu-icon.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/1px.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_services.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/button-bg-hover.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_upload_ds.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/view.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_user_stores.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu-icon.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_logs.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu-sub-title-bg.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_ds.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_security.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_transports.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/gov-header-logo.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_tracer.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_manage.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/cancel.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/menu_header.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/button_center.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/button_center_focus.gif
+
+RESULTS: /_system/governance/repository/components/org.wso2.carbon.all-themes/Default/images/plugin_delete.gif
+
+RESULTS: /atom/_system
+
+RESULTS: /atom/_system/config
+
+RESULTS: /atom/_system/config/repository
+
+RESULTS: /atom/_system/config/repository/components
+
+RESULTS: /atom/_system/config/repository/components/org.wso2.carbon.registry
+
+RESULTS: /atom/_system/config/repository/components/org.wso2.carbon.registry/queries
+
+RESULTS: /atom/_system/config/repository/components/org.wso2.carbon.registry/queries/custom-queries
+
