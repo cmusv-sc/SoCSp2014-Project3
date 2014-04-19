@@ -1,16 +1,6 @@
-import com.mongodb.util.JSON;
-
-import com.mongodb.MongoClient;
-import com.mongodb.MongoException;
-import com.mongodb.WriteConcern;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.BasicDBObject;
-import com.mongodb.DBObject;
-import com.mongodb.DBCursor;
-import com.mongodb.ServerAddress;
-
 import java.io.*;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 //It begins
@@ -31,8 +21,6 @@ import java.io.ByteArrayInputStream;
 import java.util.Iterator;
 
 public class SearchEngine {
-    final static String DB_NAME = "PW_2012_09_02_09_03_35";
-    final static String API_COL = "apis";
 
     public static void main(String[] args) throws Exception {
         System.setProperty("javax.net.ssl.trustStore", "src/wso2carbon.jks");
@@ -43,19 +31,47 @@ public class SearchEngine {
         String PASSWORD = "admin";
         RemoteRegistry registry = new RemoteRegistry(REGISTRY_URL, USER, PASSWORD);
         Collection collection = registry.newCollection();
-        registry.put("/c1/c2", collection);
+        //registry.put("/c1/c2", collection);
         
         Resource r1 = registry.newResource();
-        String str = "My File Content";
-        r1.setContent(str.getBytes());
-        registry.put("/c1/c2/r1", r1);
+        String r1_str = "My File Content";
+        r1.setContent(r1_str.getBytes());
+        //registry.put("/c1/c2/r1", r1);
+
+        Resource r2 = registry.newResource();
+        String r2_str = "My File Content";
+        r2.setContent(r2_str.getBytes());
+        //registry.put("/c1/c2/r2", r2);
 
         Comment c1 = new Comment();
         c1.setText("This is my comment");
-        registry.addComment("/c1/c2/r1", c1);
+        //registry.addComment("/c1/c2/r1", c1);
         System.out.println(registry.getComments("/c1/c2/r1")[0].getText());
 
-//        registry.searchContent("Content");
+        //registry.searchContent("Content");
+
+
+        String sql1 = "SELECT REG_PATH_ID, REG_NAME FROM REG_RESOURCE";
+        Resource q2 = registry.newResource();
+        q2.setContent(sql1);
+        q2.setMediaType(RegistryConstants.SQL_QUERY_MEDIA_TYPE);
+        q2.addProperty(RegistryConstants.RESULT_TYPE_PROPERTY_NAME, RegistryConstants.RESOURCES_RESULT_TYPE);
+        //registry.put(RegistryConstants.CONFIG_REGISTRY_BASE_PATH + RegistryConstants.QUERIES_COLLECTION_PATH + "/custom-queries", q2);
+        Map parameters = new HashMap();
+        //parameters.put("1", "%service%");
+        Resource result = registry.executeQuery(RegistryConstants.CONFIG_REGISTRY_BASE_PATH + RegistryConstants.QUERIES_COLLECTION_PATH + "/custom-queries", parameters);
+
+        String[] paths = (String[])result.getContent();
+
+        for (int i = 0; i < paths.length; i++) System.out.printf("RESULTS: %s\n\n", paths[i]);
+
+
+
+
+
+
+
+
 //        String line;
 //        Scanner stdin = new Scanner(System.in);
         
@@ -70,21 +86,4 @@ public class SearchEngine {
         
     }
 
-    private static void searchDB(String key, String value) throws Exception {
-        MongoClient mongoClient = new MongoClient();
-        DB db = mongoClient.getDB(DB_NAME);
-        DBCollection coll = db.getCollection(API_COL);
-        DBCursor cursor = coll.find();
-        String query = "{'" + key + "': {'$in': ['" + value + "']}}";
-        DBObject queryObj = (DBObject) JSON.parse(query);
-        cursor = coll.find(queryObj);
-
-        try {
-            while(cursor.hasNext()) {
-                System.out.println(cursor.next());
-            }
-        } finally {
-            cursor.close();
-        }
-    }
 }
