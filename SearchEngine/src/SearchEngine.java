@@ -20,6 +20,8 @@ import org.wso2.carbon.registry.core.Registry;
 import org.wso2.carbon.registry.core.Resource;
 import org.wso2.carbon.registry.core.exceptions.RegistryException;
 import org.wso2.carbon.registry.core.jdbc.handlers.RequestContext;
+import org.wso2.carbon.registry.core.*;
+import org.wso2.carbon.registry.app.RemoteRegistry;
 
 import org.wso2.carbon.registry.core.jdbc.handlers.Handler;
 
@@ -33,6 +35,10 @@ public class SearchEngine {
     final static String API_COL = "apis";
 
     public static void main(String[] args) throws Exception {
+        String REGISTRY_URL = "https://localhost:9443/registry/atom";
+        String USER = "admin";
+        String PASSWORD = "admin";
+        RemoteRegistry registry = new RemoteRegistry(REGISTRY_URL, USER, PASSWORD);
 //        if (args.length != 2) {
 //            System.out.printf("\n\nUsage:\nSearchEngine <key> <value>\n");
 //        }
