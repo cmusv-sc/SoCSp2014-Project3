@@ -13,19 +13,35 @@ import com.mongodb.ServerAddress;
 import java.io.*;
 import java.util.*;
 
+//It begins
+import org.apache.axiom.om.OMElement;
+import org.apache.axiom.om.impl.builder.StAXOMBuilder;
+import org.wso2.carbon.registry.core.Registry;
+import org.wso2.carbon.registry.core.Resource;
+import org.wso2.carbon.registry.core.exceptions.RegistryException;
+import org.wso2.carbon.registry.core.jdbc.handlers.RequestContext;
+
+import org.wso2.carbon.registry.core.jdbc.handlers.Handler;
+
+
+import javax.xml.namespace.QName;
+import java.io.ByteArrayInputStream;
+import java.util.Iterator;
+
 public class SearchEngine {
     final static String DB_NAME = "PW_2012_09_02_09_03_35";
     final static String API_COL = "apis";
 
     public static void main(String[] args) throws Exception {
-        if (args.length != 2) {
-            System.out.printf("\n\nUsage:\nSearchEngine <key> <value>\n");
-        }
-        else {
-            String key = args[0];
-            String value = args[1];
-            searchDB(key, value);
-        }
+//        if (args.length != 2) {
+//            System.out.printf("\n\nUsage:\nSearchEngine <key> <value>\n");
+//        }
+//        else {
+//            String key = args[0];
+//            String value = args[1];
+//            searchDB(key, value);
+//        }
+        
     }
 
     private static void searchDB(String key, String value) throws Exception {
