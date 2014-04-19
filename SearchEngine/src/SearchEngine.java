@@ -56,8 +56,10 @@ public class SearchEngine {
         q2.setContent(sql1);
         q2.setMediaType(RegistryConstants.SQL_QUERY_MEDIA_TYPE);
         q2.addProperty(RegistryConstants.RESULT_TYPE_PROPERTY_NAME, RegistryConstants.RESOURCES_RESULT_TYPE);
-        //registry.put(RegistryConstants.CONFIG_REGISTRY_BASE_PATH + RegistryConstants.QUERIES_COLLECTION_PATH + "/custom-queries", q2);
+        //Comment this to work
+        //        registry.put(RegistryConstants.CONFIG_REGISTRY_BASE_PATH + RegistryConstants.QUERIES_COLLECTION_PATH + "/custom-queries", q2);
         Map parameters = new HashMap();
+        //Comment this to work
         //parameters.put("1", "%service%");
         Resource result = registry.executeQuery(RegistryConstants.CONFIG_REGISTRY_BASE_PATH + RegistryConstants.QUERIES_COLLECTION_PATH + "/custom-queries", parameters);
 
