@@ -34,6 +34,9 @@ public class SearchEngine {
     final static String API_COL = "apis";
 
     public static void main(String[] args) throws Exception {
+        System.setProperty("javax.net.ssl.trustStore", "src/wso2carbon.jks");
+        System.setProperty("javax.net.ssl.trustStorePassword", "wso2carbon");
+        System.setProperty("javax.net.ssl.trustStoreType","JKS");
         String REGISTRY_URL = "https://localhost:9443/registry/atom";
         String USER = "admin";
         String PASSWORD = "admin";
