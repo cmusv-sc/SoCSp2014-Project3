@@ -30,60 +30,50 @@ public class SearchEngine {
         String USER = "admin";
         String PASSWORD = "admin";
         RemoteRegistry registry = new RemoteRegistry(REGISTRY_URL, USER, PASSWORD);
-        Collection collection = registry.newCollection();
-        //registry.put("/c1/c2", collection);
+        if (!registry.resourceExists("/c1/c2")) {
+           Collection collection = registry.newCollection();
+           registry.put("/c1/c2", collection);
+        }
         
-        Resource r1 = registry.newResource();
-        String r1_str = "My File Content";
-        r1.setContent(r1_str.getBytes());
-        //registry.put("/c1/c2/r1", r1);
+        if (!registry.resourceExists("/c1/c2/r1")) {
+            Resource r1 = registry.newResource();
+            String r1_str = "My File Content";
+            r1.setContent(r1_str.getBytes());
+            registry.put("/c1/c2/r1", r1);
+        }
 
-        Resource r2 = registry.newResource();
-        String r2_str = "My File Content";
-        r2.setContent(r2_str.getBytes());
-        //registry.put("/c1/c2/r2", r2);
+        if (!registry.resourceExists("c1/c2/r2")) {
+            Resource r2 = registry.newResource();
+            String r2_str = "My File Content";
+            r2.setContent(r2_str.getBytes());
+            registry.put("/c1/c2/r2", r2);
+        }
 
-        Comment c1 = new Comment();
-        c1.setText("This is my comment");
-        //registry.addComment("/c1/c2/r1", c1);
-        System.out.println(registry.getComments("/c1/c2/r1")[0].getText());
+        if (registry.getComments("/c1/c2/r1")[0] != null) {
+            Comment c1 = new Comment();
+            c1.setText("This is my comment");
+            registry.addComment("/c1/c2/r1", c1);
+        }
 
-        //registry.searchContent("Content");
+        if (!registry.resourceExists(RegistryConstants.CONFIG_REGISTRY_BASE_PATH + RegistryConstants.QUERIES_COLLECTION_PATH + "/custom-queries")) {
+            String sql1 = "SELECT REG_PATH_ID, REG_NAME FROM REG_RESOURCE WHERE REG_DESCRIPTION LIKE?";
+            Resource q1 = registry.newResource();
+            q1.setContent(sql1);
+            q1.setMediaType(RegistryConstants.SQL_QUERY_MEDIA_TYPE);
+            q1.addProperty(RegistryConstants.RESULT_TYPE_PROPERTY_NAME, RegistryConstants.RESOURCES_RESULT_TYPE);
+            registry.put(RegistryConstants.CONFIG_REGISTRY_BASE_PATH + RegistryConstants.QUERIES_COLLECTION_PATH + "/custom-queries", q1);
+        }
 
-
-        String sql1 = "SELECT REG_PATH_ID, REG_NAME FROM REG_RESOURCE";
-        Resource q2 = registry.newResource();
-        q2.setContent(sql1);
-        q2.setMediaType(RegistryConstants.SQL_QUERY_MEDIA_TYPE);
-        q2.addProperty(RegistryConstants.RESULT_TYPE_PROPERTY_NAME, RegistryConstants.RESOURCES_RESULT_TYPE);
-        //registry.put(RegistryConstants.CONFIG_REGISTRY_BASE_PATH + RegistryConstants.QUERIES_COLLECTION_PATH + "/custom-queries", q2);
         Map parameters = new HashMap();
-        //parameters.put("1", "%service%");
+        if (parameters.isEmpty()) { 
+            //parameters.put("1", "%service%");
+        }
+        
         Resource result = registry.executeQuery(RegistryConstants.CONFIG_REGISTRY_BASE_PATH + RegistryConstants.QUERIES_COLLECTION_PATH + "/custom-queries", parameters);
-
         String[] paths = (String[])result.getContent();
 
         for (int i = 0; i < paths.length; i++) System.out.printf("RESULTS: %s\n\n", paths[i]);
 
-
-
-
-
-
-
-
-//        String line;
-//        Scanner stdin = new Scanner(System.in);
-        
-//        if (args.length != 2) {
-//            System.out.printf("\n\nUsage:\nSearchEngine <key> <value>\n");
-//        }
-//        else {
-//            String key = args[0];
-//            String value = args[1];
-//            searchDB(key, value);
-//        }
-        
     }
 
 }
