@@ -48,11 +48,15 @@ public class SearchEngine {
             r2.setContent(r2_str.getBytes());
             registry.put("/c1/c2/r2", r2);
         }
-
-        if (registry.getComments("/c1/c2/r1")[0] != null) {
-            Comment c1 = new Comment();
-            c1.setText("This is my comment");
-            registry.addComment("/c1/c2/r1", c1);
+        
+        try {
+            if (registry.getComments("/c1/c2/r1")[0] != null) {
+                Comment c1 = new Comment();
+                c1.setText("This is my comment");
+                registry.addComment("/c1/c2/r1", c1);
+            }
+        }
+        catch (Exception e) {
         }
 
         if (!registry.resourceExists(RegistryConstants.CONFIG_REGISTRY_BASE_PATH + RegistryConstants.QUERIES_COLLECTION_PATH + "/custom-queries")) {
@@ -66,7 +70,7 @@ public class SearchEngine {
 
         Map parameters = new HashMap();
         if (parameters.isEmpty()) { 
-            //parameters.put("1", "%service%");
+            parameters.put("1", "%service%");
         }
         
         Resource result = registry.executeQuery(RegistryConstants.CONFIG_REGISTRY_BASE_PATH + RegistryConstants.QUERIES_COLLECTION_PATH + "/custom-queries", parameters);
