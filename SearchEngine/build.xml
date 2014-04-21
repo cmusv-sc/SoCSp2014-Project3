@@ -38,6 +38,13 @@
         <attribute name="Class-Path" value="${manifest.classpath}"/>
       </manifest>
     </jar>
+    <jar destfile="${jars.dir}/PWParser.jar" basedir="${classes.dir}">
+      <fileset dir="${basedir}" />
+      <manifest>
+        <attribute name="Main-Class" value="PWParser"/>
+        <attribute name="Class-Path" value="${manifest.classpath}"/>
+      </manifest>
+    </jar>
   </target>
 
   <target name="run">
