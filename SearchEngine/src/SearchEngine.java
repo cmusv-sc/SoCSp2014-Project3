@@ -70,7 +70,7 @@ public class SearchEngine {
 
         Map parameters = new HashMap();
         if (parameters.isEmpty()) { 
-            parameters.put("1", "%service%");
+            //            parameters.put("1", "%service%");
         }
         
         Resource result = registry.executeQuery(RegistryConstants.CONFIG_REGISTRY_BASE_PATH + RegistryConstants.QUERIES_COLLECTION_PATH + "/custom-queries", parameters);
