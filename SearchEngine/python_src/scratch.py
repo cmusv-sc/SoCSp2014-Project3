@@ -3,6 +3,7 @@
 import datetime
 from pymongo import *
 import time
+import re
 
 import config
 
@@ -26,6 +27,7 @@ if __name__ == '__main__':
 
   for a in apis.find():
     name = a['link']
+    name = re.search('/.+?(/.+?$)', name).groups()[0]
     rating = a['rating']
     timestamp = a['updated']
     timestamp = str(time.mktime(datetime.datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%SZ").timetuple()))
