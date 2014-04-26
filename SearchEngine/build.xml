@@ -29,7 +29,7 @@
   </target>
 
   <target name="jar">
-    <echo message="Manifest Classpath ${manifest.classpath}"/>
+<!--    <echo message="Manifest Classpath ${manifest.classpath}"/> -->
     <mkdir dir="${jars.dir}"/>
     <jar destfile="${jars.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
       <fileset dir="${basedir}" />
