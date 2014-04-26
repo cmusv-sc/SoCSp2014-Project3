@@ -34,14 +34,14 @@
     <jar destfile="${jars.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
       <fileset dir="${basedir}" />
       <manifest>
-        <attribute name="Main-Class" value="${ant.project.name}"/>
+        <attribute name="Main-Class" value="${ant.project.name}.SearchEngine"/>
         <attribute name="Class-Path" value="${manifest.classpath}"/>
       </manifest>
     </jar>
     <jar destfile="${jars.dir}/PWParser.jar" basedir="${classes.dir}">
       <fileset dir="${basedir}" />
       <manifest>
-        <attribute name="Main-Class" value="PWParser"/>
+        <attribute name="Main-Class" value="${ant.project.name}.PWParser"/>
         <attribute name="Class-Path" value="${manifest.classpath}"/>
       </manifest>
     </jar>
