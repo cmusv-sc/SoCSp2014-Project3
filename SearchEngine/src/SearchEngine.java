@@ -96,21 +96,21 @@ public class SearchEngine {
 //        else {
 //            System.out.println("Resource doesn't exist " + paths[i] + registry.resourceExists("/c1/pw/api/bitcoin-charts-markets"));
 //        }
-        for (int i = 0; i < paths.length; i++) {
-            String path = paths[i];
-            try {
-                path = path.substring(path.indexOf("/",1), path.length());
-                if (registry.resourceExists(path)) {
-                    System.out.println("" + ((String[]) registry.get(path).getContent()).length + path );
-                }
-            }
-            catch (Exception e) {
-                System.out.println("Error " + path + " " + e);
-                continue;
-            }
-        }
+//        for (int i = 0; i < paths.length; i++) {
+//            String path = paths[i];
+//            try {
+//                path = path.substring(path.indexOf("/",1), path.length());
+//                if (registry.resourceExists(path)) {
+//                    System.out.println("" + ((String[]) registry.get(path).getContent()).length + path );
+//                }
+//            }
+//            catch (Exception e) {
+//                System.out.println("Error " + path + " " + e);
+//                continue;
+//            }
+//        }
 
-        //for (int i = 0; i < paths.length; i++) System.out.printf("RESULTS: %s\n\n", paths[i]);
+        for (int i = 0; i < paths.length; i++) System.out.printf("RESULTS: %s\n\n", paths[i]);
 
     }
 
