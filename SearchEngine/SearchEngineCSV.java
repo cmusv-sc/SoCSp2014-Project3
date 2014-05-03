@@ -39,11 +39,16 @@ public class SearchEngineCSV {
       w.close();
 
 			// 2. query
-			String querystr = args.length > 0 ? args[0] : "telephony";
-
-			// the "title" arg specifies the default field to use
-			// when no field is explicitly specified in the query.
-			Query q = new QueryParser(Version.LUCENE_40, "tags", analyzer).parse(querystr);
+      String field = "tags";
+      String querystr = "tag1";
+      if (args.length == 1) {
+        querystr = args[0];
+      } else if (args.length == 2) {
+        field = args[0];
+        querystr = args[1];
+      }
+      System.out.println("QUERY: " + field + " = " + querystr);
+			Query q = new QueryParser(Version.LUCENE_40, field, analyzer).parse(querystr);
 
 			// 3. search
 			int hitsPerPage = 10;
@@ -71,18 +76,13 @@ public class SearchEngineCSV {
       String line = null;  
       while ((line = br.readLine()) != null) {
 			    Document doc = new Document();
-			    // PARSING WILL GO HERE
           String[] fields = line.split(";;");
-          /*for (int i = 0; i < fields.length; i++) {
-              System.out.printf("%d: %s\n", i, fields[i]);
-          }*/
-          if (fields.length == 4) {
-              doc.add(new TextField("name", fields[0], Field.Store.YES));
-              doc.add(new TextField("rating", fields[1], Field.Store.YES));
-              doc.add(new TextField("summary", fields[2], Field.Store.YES));
-              doc.add(new TextField("tags", fields[3], Field.Store.YES));
-			        w.addDocument(doc);
-          }
+          doc.add(new TextField("name", fields[0], Field.Store.YES));
+          doc.add(new TextField("description", fields[1], Field.Store.YES));
+          doc.add(new TextField("rating", fields[2], Field.Store.YES));
+          doc.add(new TextField("tags", fields[3], Field.Store.YES));
+          doc.add(new TextField("timestamp", fields[4], Field.Store.YES));
+			    w.addDocument(doc);
       }
     }
 }
