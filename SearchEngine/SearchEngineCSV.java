@@ -72,7 +72,7 @@ public class SearchEngineCSV {
       while ((line = br.readLine()) != null) {
 			    Document doc = new Document();
 			    // PARSING WILL GO HERE
-          String[] fields = line.split(",");
+          String[] fields = line.split(";;");
           /*for (int i = 0; i < fields.length; i++) {
               System.out.printf("%d: %s\n", i, fields[i]);
           }*/

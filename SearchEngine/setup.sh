@@ -1,0 +1,3 @@
+#! /usr/bin/env bash
+#To use > source ./setup.sh
+export CLASSPATH='.:./lib/lucene-analyzers-common-4.6.1.jar:./lib/lucene-benchmark-4.6.1.jar:./lib/lucene-classification-4.6.1.jar:./lib/lucene-codecs-4.6.1.jar:./lib/lucene-core-4.6.1.jar:./lib/lucene-demo-4.6.1.jar:./lib/lucene-expressions-4.6.1.jar:./lib/lucene-facet-4.6.1.jar:./lib/lucene-grouping-4.6.1.jar:./lib/lucene-highlighter-4.6.1.jar:./lib/lucene-join-4.6.1.jar:./lib/lucene-memory-4.6.1.jar:./lib/lucene-misc-4.6.1.jar:./lib/lucene-queries-4.6.1.jar:./lib/lucene-queryparser-4.6.1.jar:./lib/lucene-replicator-4.6.1.jar:./lib/lucene-sandbox-4.6.1.jar:./lib/lucene-spatial-4.6.1.jar:./lib/lucene-suggest-4.6.1.jar:./lib/lucene-test-framework-4.6.1.jar'
