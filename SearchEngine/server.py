@@ -1,7 +1,6 @@
 import time
 import BaseHTTPServer
 import cgi
-import requests
 import re
 from subprocess import Popen, PIPE
 import os
