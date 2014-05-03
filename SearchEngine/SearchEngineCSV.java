@@ -63,7 +63,7 @@ public class SearchEngineCSV {
 			for(int i=0;i<hits.length;++i) {
 					int docId = hits[i].doc;
 					Document d = searcher.doc(docId);
-					System.out.println((i + 1) + ". NAME: " + d.get("name") + "\tRATING: " + d.get("rating") + "\t SUMMARY: " + d.get("summary") + "\tTAGS: " + d.get("tags"));
+					System.out.println((i + 1) + ". NAME: " + d.get("name") + "\tDESCRIPTION" + d.get("description") + "\tRATING: " + d.get("rating") + "\tTAGS: " + d.get("tags") + "\tTIMESTAMP: " + d.get("timestamp"));
 			}
 
 			// reader can only be closed when there
