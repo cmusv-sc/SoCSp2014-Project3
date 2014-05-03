@@ -3,7 +3,6 @@ import time
 import BaseHTTPServer
 import cgi
 import re
-from subprocess import Popen, PIPE
 import os
 
 HOST_NAME = 'localhost' # !!!REMEMBER TO CHANGE THIS!!!
@@ -26,7 +25,7 @@ def _handle_search(s):
         query = re.sub('%20',' ',m3.groups()[0])
     else:
         query = re.sub('%20',' ',m4.groups()[0])
-        
+
     output = os.popen("java SearchEngineCSV {0} {1}".format(name, query)).read()
     output = re.sub('\n','<br>',output)
     s.wfile.write(output)
