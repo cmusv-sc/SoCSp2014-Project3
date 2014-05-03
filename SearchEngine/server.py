@@ -11,13 +11,23 @@ PORT_NUMBER = 9000 # Maybe set this to 9000.
 
 def _handle_search(s):
     print s.path
-    m = re.search('SearchEngine/(.+?)/',s.path)
-    if m:
-        name = re.sub('%20',' ',m.groups()[0])
+    m1 = re.search('SearchEngine/(.+?)/(.+?)/',s.path)
+    m2 = re.search('SearchEngine/(.+?)/(.+)',s.path)
+    m3 = re.search('SearchEngine/(.+?)/',s.path)
+    m4 = re.search('SearchEngine/(.+)',s.path)
+    name = 'name'
+    if m1:
+        name = re.sub('%20',' ',m1.groups()[0])
+        query = re.sub('%20',' ',m1.groups()[1])
+    elif m2:
+        name = re.sub('%20',' ',m2.groups()[0])
+        query = re.sub('%20',' ',m2.groups()[1])
+    elif m3:
+        query = re.sub('%20',' ',m3.groups()[0])
     else:
-        m = re.search('SearchEngine/(.+)',s.path)
-        name = re.sub('%20',' ',m.groups()[0])
-    output = os.popen("java SearchEngineCSV name {0}".format(name)).read()
+        query = re.sub('%20',' ',m4.groups()[0])
+        
+    output = os.popen("java SearchEngineCSV {0} {1}".format(name, query)).read()
     output = re.sub('\n','<br>',output)
     s.wfile.write(output)
 
