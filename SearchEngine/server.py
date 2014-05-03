@@ -15,7 +15,7 @@ def _handle_search(s):
     m2 = re.search('SearchEngine/(.+?)/(.+)',s.path)
     m3 = re.search('SearchEngine/(.+?)/',s.path)
     m4 = re.search('SearchEngine/(.+)',s.path)
-    name = 'name'
+    name = ''
     if m1:
         name = re.sub('%20',' ',m1.groups()[0])
         query = re.sub('%20',' ',m1.groups()[1])
