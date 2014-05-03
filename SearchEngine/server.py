@@ -9,17 +9,6 @@ import os
 HOST_NAME = 'localhost' # !!!REMEMBER TO CHANGE THIS!!!
 PORT_NUMBER = 9000 # Maybe set this to 9000.
 
-def _handle_reputation(s):
-    print s.path
-    m = re.search('getReputation/(.+?)/',s.path)
-    if m:
-        name = re.sub('%20',' ',m.groups()[0])
-    else:
-        m = re.search('getReputation/(.+)',s.path)
-        name = re.sub('%20',' ',m.groups()[0])
-#    s.wfile.write("<p>Total trust for {0}: {1}".format(name,trust.scratch.get_total_trust(name)))
-    s.wfile.write("{0}".format(trust.scratch.get_total_trust(name)))
-
 def _handle_search(s):
     print s.path
     m = re.search('SearchEngine/(.+?)/',s.path)
@@ -30,8 +19,6 @@ def _handle_search(s):
         name = re.sub('%20',' ',m.groups()[0])
     output = os.popen("java SearchEngineCSV name {0}".format(name)).read()
     s.wfile.write(output)
-
-
 
 class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
     def do_HEAD(s):
@@ -48,9 +35,7 @@ class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 #        s.wfile.write("<body><p>This is a test.</p>")
         # If someone went to "http://something.somewhere.net/foo/bar/",
         # then s.path equals "/foo/bar/".
-        if re.search("getReputation",s.path):
-            _handle_reputation(s)
-        elif re.search("SearchEngine",s.path):
+        if re.search("SearchEngine",s.path):
             _handle_search(s)
         else:
             s.wfile.write("<p>You accessed path: %s</p>" % s.path)
