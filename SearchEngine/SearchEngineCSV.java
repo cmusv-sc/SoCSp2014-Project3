@@ -9,6 +9,7 @@ import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
+import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
@@ -29,9 +30,7 @@ public class SearchEngineCSV {
 		 IndexSearcher searcher;
       
 
-     public SearchEngineCSV (String filename, String field, String value) throws IOException, ParseException {
-      
-       // Add document
+     public SearchEngineCSV(String filename) throws IOException {
        analyzer = new StandardAnalyzer(Version.LUCENE_40);
        index = new RAMDirectory();
        config = new IndexWriterConfig(Version.LUCENE_40, analyzer);
@@ -40,16 +39,32 @@ public class SearchEngineCSV {
        System.out.printf("FILENAME: %s\n", filename);
        addDoc(w, filename);
        w.close();
+       
+    }
+    
+    private void searchField(String field, String value) throws IOException, ParseException { 
+       System.out.println("QUERY: " + field + " = " + value);
+       Query q = new QueryParser(Version.LUCENE_40, field, analyzer).parse(value);
+       searchify(q);
+    }
 
-       // Search document
-       Query q = buildQuery(field, value);
-       reader = DirectoryReader.open(index);
-			 searcher = new IndexSearcher(reader);
-       ScoreDoc[] hits = getHits(q);
-       printResults(hits);
-       reader.close();
+    private void searchAllFields(String value) throws IOException, ParseException { 
+      System.out.println("QUERY: " + value);
+      MultiFieldQueryParser queryParser = new MultiFieldQueryParser(Version.LUCENE_40, new String[]{"name", "description", "tags"}, analyzer);
+      Query q = queryParser.parse(value);
+      searchify(q);
+       
+    }
+
+    private void searchify(Query q) throws IOException, ParseException {
+      reader = DirectoryReader.open(index);
+      searcher = new IndexSearcher(reader);
+      ScoreDoc[] hits = getHits(q);
+      printResults(hits);
+      reader.close();
 
     }
+
  
     private static void addDoc(IndexWriter w, String file) throws IOException {
       BufferedReader br = new BufferedReader(new FileReader(file));  
@@ -98,16 +113,20 @@ public class SearchEngineCSV {
     public static void main(String[] args) throws IOException, ParseException {
       String workingDir = System.getProperty("user.dir");
       String filename = workingDir + File.separatorChar + "python_src/PW.csv";
-String field = "tags";
-      String querystr = "tag1";
-      if (args.length == 1) {
-        querystr = args[0];
-      } else if (args.length == 2) {
-        field = args[0];
-        querystr = args[1];
-      }
 
-      SearchEngineCSV searchifier = new SearchEngineCSV(filename, args[0], args[1]);
+      SearchEngineCSV searchifier = new SearchEngineCSV(filename);
+
+
+      if (args.length == 0) {
+        System.out.println("ERROR: Must provide a value or a field and value to search for.");
+      
+      } else if (args.length == 1) {
+        searchifier.searchAllFields(args[0]);
+
+      } else {
+        searchifier.searchField(args[0], args[1]);
+
+      }
 
     }
 
