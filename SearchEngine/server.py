@@ -1,8 +1,6 @@
 import time
 import BaseHTTPServer
 import cgi
-import ujson
-import json
 import requests
 import re
 from subprocess import Popen, PIPE
@@ -30,12 +28,9 @@ def _handle_search(s):
     else:
         m = re.search('SearchEngine/(.+)',s.path)
         name = re.sub('%20',' ',m.groups()[0])
-#    os.system("java SearchEngineCSV name {0}".format(name))
     output = os.popen("java SearchEngineCSV name {0}".format(name)).read()
     s.wfile.write(output)
-#    process = Popen(["java SearchEngineCSV"], stdout=PIPE)
-#    (output, err) = process.communicate()
-#    s.wfile.write("{0}".format(name))
+
 
 
 class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
