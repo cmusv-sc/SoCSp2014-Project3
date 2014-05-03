@@ -18,6 +18,7 @@ def _handle_search(s):
         m = re.search('SearchEngine/(.+)',s.path)
         name = re.sub('%20',' ',m.groups()[0])
     output = os.popen("java SearchEngineCSV name {0}".format(name)).read()
+    output = re.sub('\n','<br>',output)
     s.wfile.write(output)
 
 class MyHandler(BaseHTTPServer.BaseHTTPRequestHandler):
